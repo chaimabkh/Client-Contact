@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="ClientContact_Gestion::menu_item" title="Contact Management" module="ClientContact_Gestion" sortOrder="100" resource="ClientContact_Gestion::menu_item" translate="title"/>
+        <add id="ClientContact_Gestion::configuration" title="Configuration" module="ClientContact_Gestion" sortOrder="10" parent="ClientContact_Gestion::menu_item" action="adminhtml/system_config/edit/section/management" resource="ClientContact_Gestion::configuration"/>
+        <add id="ClientContact_Gestion::customers" title="Customer Contact" module="ClientContact_Gestion" sortOrder="10" parent="ClientContact_Gestion::menu_item" action="contacts/customers" resource="ClientContact_Gestion::customers"/>
+    </menu>
+</config>
